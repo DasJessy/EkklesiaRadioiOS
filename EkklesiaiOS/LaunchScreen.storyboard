@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1021">
+                                <rect key="frame" x="46" y="200" width="291" height="412"/>
+                                <variation key="heightClass=regular-widthClass=compact" image="Ekkl.png"/>
+                                <constraints>
+                                    <constraint id="9623" firstAttribute="width" constant="291"/>
+                                    <constraint id="9624" firstAttribute="height" constant="267"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2481">
+                                <rect key="frame" x="685" y="1028" width="294" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="550" id="2900"/>
+                                    <constraint firstAttribute="height" constant="397" id="2901"/>
+                                    <constraint id="10451" firstAttribute="width" constant="294"/>
+                                    <constraint id="10452" firstAttribute="height" constant="55"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="2900"/>
+                                        <exclude reference="2901"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" image="Ekkl.png">
+                                    <mask key="constraints">
+                                        <include reference="2900"/>
+                                        <include reference="2901"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint id="9621" firstItem="Ze5-6b-2t3" firstAttribute="bottom" secondItem="1021" secondAttribute="bottom" constant="200"/>
+                            <constraint id="9622" firstItem="Ze5-6b-2t3" firstAttribute="trailing" secondItem="1021" secondAttribute="trailing" constant="38"/>
+                            <constraint id="9706" firstItem="1021" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="30"/>
+                            <constraint id="9788" firstItem="1021" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="180"/>
+                            <constraint id="10449" firstItem="Ze5-6b-2t3" firstAttribute="trailing" secondItem="2481" secondAttribute="trailing" constant="-211"/>
+                            <constraint id="10450" firstItem="Ze5-6b-2t3" firstAttribute="bottom" secondItem="2481" secondAttribute="bottom" constant="-59"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="1021"/>
+                                <exclude reference="2481"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="1021"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="2481"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-438" y="-86"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Ekkl.png" width="400" height="400"/>
+        <image name="BubbleIncoming" width="56" height="35"/>
+        <image name="BubbleOutgoing" width="56" height="35"/>
+        <image name="Ekk.png" width="2048" height="1648"/>
+        <image name="IconEkklesia.png" width="192" height="192"/>
+        <image name="iconPause.png" width="48" height="48"/>
+        <image name="iconPlay.png" width="48" height="48"/>
+        <image name="iosBackground.png" width="640" height="1136"/>
+        <image name="icons8-communication-25.png" width="25" height="25"/>
+        <image name="icons8-communication-30.png" width="30" height="30"/>
+        <image name="icons8-radio-station-25.png" width="25" height="25"/>
+        <image name="icons8-radio-station-30.png" width="30" height="30"/>
+        <image name="icons8-pause-30.png" width="30" height="30"/>
+        <image name="icons8-play-30.png" width="30" height="30"/>
+        <image name="icons8-pause-button-50.png" width="50" height="50"/>
+        <image name="icons8-pause-button-filled-50.png" width="50" height="50"/>
+        <image name="icons8-play-button-circled-50.png" width="50" height="50"/>
+        <image name="icons8-play-button-circled-filled-50.png" width="50" height="50"/>
+        <image name="icons8-sent-25.png" width="25" height="25"/>
+        <image name="icons8-sent-30.png" width="30" height="30"/>
+        <image name="icons8-sent-50.png" width="50" height="50"/>
+        <image name="googleSignin.png" width="602" height="102"/>
+    </resources>
+</document>

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="16937" useSafeAreas="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+    </dependencies>
+    <scenes>
+        <!--Radio-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="16936">
+            <objects>
+                <tabBarController id="16937" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="16940">
+                        <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <variation key="widthClass=compact"/>
+                    </tabBar>
+                    <connections>
+                        <segue id="31265" destination="31048" kind="relationship" relationship="viewControllers"/>
+                        <segue id="33121" destination="33066" kind="relationship" relationship="viewControllers"/>
+                        <segue id="45499" destination="43830" kind="relationship" relationship="viewControllers"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="16941" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-390" y="323"/>
+        </scene>
+        <!--Chat-->
+        <scene sceneID="31047">
+            <objects>
+                <viewController id="31048" sceneMemberID="viewController" customClass="playerViewController">
+                    <view key="view" contentMode="scaleToFill" id="31049">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="31046"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" id="31063" translatesAutoresizingMaskIntoConstraints="NO" adjustsFontForContentSizeCategory="YES" editable="NO" usesAttributedText="YES">
+                                <rect key="frame" x="16" y="455" width="343" height="149"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="“Fight the good fight of the faith. Take hold of the eternal life to which you were called when you made your good confession in the presence of many witnesses.” 1 Timothy 6:12  ">
+                                        <attributes>
+                                            <font key="NSFont" name="Cochin" family="Cochin" size="16"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <constraints>
+                                    <constraint id="36377" firstAttribute="width" constant="343"/>
+                                    <constraint id="36378" firstAttribute="height" constant="149"/>
+                                </constraints>
+                            </textView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="31064">
+                                <rect key="frame" x="178" y="399" width="19" height="20"/>
+                                <constraints>
+                                    <constraint id="32471" firstAttribute="width" constant="19"/>
+                                </constraints>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31065">
+                                <rect key="frame" x="124" y="306" width="127" height="56"/>
+                                <state key="normal" image="icons8-play-button-circled-filled-50.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default" translatesAutoresizingMaskIntoConstraints="NO">
+                                    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </variation>
+                                <constraints>
+                                    <constraint id="32285" firstAttribute="width" constant="127"/>
+                                    <constraint id="32286" firstAttribute="height" constant="56"/>
+                                </constraints>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="31066">
+                                <rect key="frame" x="38" y="67" width="306" height="196"/>
+                                <variation key="default" translatesAutoresizingMaskIntoConstraints="NO" image="Ekkl.png"/>
+                                <variation key="heightClass=regular-widthClass=compact" image="Ekkl.png"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint id="32155" firstItem="31066" firstAttribute="top" secondItem="31046" secondAttribute="top" constant="47"/>
+                            <constraint id="32167" firstItem="31066" firstAttribute="leading" secondItem="31049" secondAttribute="leadingMargin" constant="22"/>
+                            <constraint id="32179" firstItem="31049" firstAttribute="trailingMargin" secondItem="31066" secondAttribute="trailing" constant="15"/>
+                            <constraint id="32191" firstItem="31049" firstAttribute="trailingMargin" secondItem="31066" secondAttribute="trailing" constant="15"/>
+                            <constraint id="32203" firstItem="31066" firstAttribute="height" secondItem="31046" secondAttribute="height" constant="-402"/>
+                            <constraint id="32283" firstItem="31046" firstAttribute="trailing" secondItem="31065" secondAttribute="trailing" constant="124"/>
+                            <constraint id="32343" firstItem="31065" firstAttribute="top" secondItem="31066" secondAttribute="bottom" constant="43"/>
+                            <constraint id="32355" firstItem="31065" firstAttribute="leading" secondItem="31049" secondAttribute="leadingMargin" constant="108"/>
+                            <constraint id="32367" firstItem="31049" firstAttribute="trailingMargin" secondItem="31065" secondAttribute="trailing" constant="108"/>
+                            <constraint id="32469" firstItem="31046" firstAttribute="trailing" secondItem="31064" secondAttribute="trailing" constant="178"/>
+                            <constraint id="32470" firstItem="31049" firstAttribute="bottom" secondItem="31064" secondAttribute="bottom" constant="248"/>
+                            <constraint id="32483" firstItem="31064" firstAttribute="leading" secondItem="31046" secondAttribute="leading" constant="178"/>
+                            <constraint id="32495" firstItem="31064" firstAttribute="top" secondItem="31065" secondAttribute="bottom" constant="37"/>
+                            <constraint id="36375" firstItem="31046" firstAttribute="trailing" secondItem="31063" secondAttribute="trailing" constant="16"/>
+                            <constraint id="36376" firstItem="31049" firstAttribute="bottom" secondItem="31063" secondAttribute="bottom" constant="63"/>
+                            <constraint id="36392" firstItem="31063" firstAttribute="leading" secondItem="31046" secondAttribute="leading" constant="16"/>
+                            <constraint id="36406" firstItem="31063" firstAttribute="top" secondItem="31064" secondAttribute="bottom" constant="36"/>
+                            <constraint id="36420" firstItem="31046" firstAttribute="trailing" secondItem="31063" secondAttribute="trailing" constant="16"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnPlayRadioIphone" destination="31065" id="name-outlet-31065"/>
+                        <outlet property="activitySpinner" destination="31064" id="name-outlet-31064"/>
+                        <outlet property="txtVerse" destination="31063" id="name-outlet-31063"/>
+                    </connections>
+                    <tabBarItem key="tabBarItem" title="Radio" id="31264" image="icons8-radio-station-30.png"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="31050" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1551" y="18"/>
+        </scene>
+        <scene sceneID="33065">
+            <objects>
+                <viewController id="33066" sceneMemberID="viewController" customClass="ChatController">
+                    <view key="view" contentMode="scaleToFill" id="33067">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="33064"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="58553" translatesAutoresizingMaskIntoConstraints="NO" usesAttributedText="YES">
+                                <rect key="frame" x="20" y="40" width="335" height="21"/>
+                                <color key="textColor" colorSpace="calibratedRGB" red="0.93333333333333335" green="0.41176470588235292" blue="0.10980392156862745" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Ekklesia Chat (BETA)">
+                                        <attributes>
+                                            <color key="NSColor" colorSpace="calibratedRGB" red="0.93333333333333335" green="0.41176470588235292" blue="0.10980392156862745" alpha="1"/>
+                                            <font key="NSFont" name="Papyrus" family="Papyrus" size="17"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <constraints>
+                                    <constraint id="63145" firstAttribute="width" constant="335"/>
+                                    <constraint id="63146" firstAttribute="height" constant="21"/>
+                                </constraints>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="16" id="59417" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Type your text here" clearButtonMode="whileEditing">
+                                <rect key="frame" x="20" y="566" width="288" height="35"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <constraints>
+                                    <constraint id="63159" firstAttribute="width" constant="288"/>
+                                    <constraint id="63160" firstAttribute="height" constant="35"/>
+                                </constraints>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="59419" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="319" y="564" width="36" height="38"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="tintColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <state key="normal" backgroundImage="icons8-sent-30.png"/>
+                                <connections>
+                                    <action selector="BtnSendMsg_TouchUpInside:" destination="59421" id="59420" eventType="touchUpInside"/>
+                                    <action selector="BtnSendMsg_TouchUpInside:" destination="59423" id="59422" eventType="touchUpInside"/>
+                                    <action selector="BtnSendMsg_TouchUpInside:" destination="33066" id="59773" eventType="touchUpInside"/>
+                                </connections>
+                                <constraints>
+                                    <constraint id="63164" firstAttribute="width" constant="36"/>
+                                    <constraint id="63165" firstAttribute="height" constant="38"/>
+                                </constraints>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="59425" translatesAutoresizingMaskIntoConstraints="NO" separatorStyle="none" keyboardDismissMode="onDrag">
+                                <rect key="frame" x="16" y="69" width="339" height="487"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes/>
+                                <color key="separatorColor" colorSpace="calibratedRGB" red="0.9882352941176471" green="0.49803921568627452" blue="0.031372549019607843" alpha="1"/>
+                                <constraints>
+                                    <constraint id="63150" firstAttribute="width" constant="339"/>
+                                    <constraint id="63151" firstAttribute="height" constant="487"/>
+                                </constraints>
+                            </tableView>
+                        </subviews>
+                        <constraints>
+                            <constraint id="63143" firstItem="33067" firstAttribute="trailing" secondItem="58553" secondAttribute="trailing" constant="20"/>
+                            <constraint id="63148" firstItem="59425" firstAttribute="leading" secondItem="33067" secondAttribute="leading" constant="16"/>
+                            <constraint id="63152" firstItem="59425" firstAttribute="top" secondItem="58553" secondAttribute="bottom" constant="8"/>
+                            <constraint id="63153" firstItem="58553" firstAttribute="leading" secondItem="33064" secondAttribute="leading" constant="20"/>
+                            <constraint id="63154" firstItem="58553" firstAttribute="top" secondItem="33064" secondAttribute="top" constant="20"/>
+                            <constraint id="63155" firstItem="33064" firstAttribute="trailing" secondItem="59425" secondAttribute="trailing" constant="20"/>
+                            <constraint id="63157" firstItem="59417" firstAttribute="leading" secondItem="33067" secondAttribute="leading" constant="20"/>
+                            <constraint id="63162" firstItem="33067" firstAttribute="trailing" secondItem="59419" secondAttribute="trailing" constant="20"/>
+                            <constraint id="63166" firstItem="59419" firstAttribute="top" secondItem="59425" secondAttribute="bottom" constant="8"/>
+                            <constraint id="63167" firstItem="33064" firstAttribute="bottom" secondItem="59419" secondAttribute="bottom" constant="16"/>
+                            <constraint id="63168" firstItem="59419" firstAttribute="leading" secondItem="59417" secondAttribute="trailing" constant="11"/>
+                            <constraint id="63169" firstItem="59417" firstAttribute="top" secondItem="59425" secondAttribute="bottom" constant="10"/>
+                            <constraint id="63500" firstItem="33064" firstAttribute="bottom" secondItem="59417" secondAttribute="bottom" constant="17"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Chat" id="33120" image="icons8-communication-30.png">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="chatBar" destination="33120" id="name-outlet-33120"/>
+                        <outlet property="tableChat" destination="59425" id="name-outlet-59425"/>
+                        <outlet property="txtChatMessage" destination="59417" id="name-outlet-59417"/>
+                        <outlet property="BtnSendMsg" destination="59419" id="name-outlet-59419"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="33068" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="557" y="1293"/>
+        </scene>
+        <scene sceneID="43829">
+            <objects>
+                <viewController id="43830" sceneMemberID="viewController" customClass="SettingController">
+                    <view key="view" contentMode="scaleToFill" id="43831">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="43828"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="51321" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="60" width="335" height="66"/>
+                                <state key="normal" title="Change Username"/>
+                                <constraints>
+                                    <constraint id="51355" firstAttribute="height" constant="66"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="BtnChangeUsername_TouchUpInside:" destination="43830" id="51376" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="51332" translatesAutoresizingMaskIntoConstraints="NO" usesAttributedText="YES" selectable="NO" editable="NO">
+                                <rect key="frame" x="16" y="152" width="343" height="450"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <constraints>
+                                    <constraint id="51368" firstAttribute="width" constant="288"/>
+                                    <constraint id="51369" firstAttribute="height" constant="351"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Ekklesia ministry was founded a year ago by a South African entrepreneur and philanthropist minister Azziz Kara. Ekklesia ministry operates on a multi-media platform, with its sole purpose to fulfil the needs of the body of Christ, by providing instrumental tools to spread the Gospel. &#xA;&#xA;The word ‘ekklesia’ originates from Greek and means ‘the called-out ones’, ‘the assembly of ordinary people’, who are called to discipleship by God to follow Him, to learn from Him and of Him, in order for the Church to grow together, serve together and worship together (Hebrews 10 : 23 - 25). &#xA;&#xA;Today we know the word Ekklesia as the calling-out of ordinary people to follow Christ in worship, but during the times of the disciples an ekklesia was an assembly of people chose to govern the affairs of a city, a state, or a nation. It was primarily a congress or parliament. To the Roman Empire it was an assembly of people to govern a conquered area. It was part of the Empire’s hearts-and-minds operation where groups would infiltrate government, schools and other social structures to make them part of the Roman Empire. &#xA;&#xA;When Jesus said He would build His Church or Ekklesia, He was speaking of an ‘assembly of people’ to govern and influence here on earth in His name.&#xA;&#xA;www.ekklesiaworldwide.com">
+                                        <attributes>
+                                            <color key="NSColor" colorSpace="calibratedRGB" red="0.31764705882352939" green="0.20392156862745098" blue="0.15294117647058825" alpha="1"/>
+                                            <color key="NSBackgroundColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
+                                            <font key="NSFont" name="ArialMT" family="Arial" size="12"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="&#xA;">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
+                                            <font key="NSFont" name="ArialMT" family="Arial" size="12"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" link="YES"/>
+                                </accessibility>
+                            </textView>
+                        </subviews>
+                        <constraints>
+                            <constraint id="51352" firstItem="43828" firstAttribute="trailing" secondItem="51321" secondAttribute="trailing" constant="20"/>
+                            <constraint id="51353" firstItem="51321" firstAttribute="top" secondItem="43831" secondAttribute="top" constant="60"/>
+                            <constraint id="51364" firstItem="51321" firstAttribute="leading" secondItem="43828" secondAttribute="leading" constant="20"/>
+                            <constraint id="51366" firstItem="43828" firstAttribute="trailing" secondItem="51332" secondAttribute="trailing" constant="16"/>
+                            <constraint id="51367" firstItem="43831" firstAttribute="bottom" secondItem="51332" secondAttribute="bottom" constant="65"/>
+                            <constraint id="51370" firstItem="51332" firstAttribute="top" secondItem="51321" secondAttribute="bottom" constant="26"/>
+                            <constraint id="51371" firstItem="51332" firstAttribute="leading" secondItem="43828" secondAttribute="leading" constant="16"/>
+                            <constraint id="51372" firstItem="43828" firstAttribute="trailing" secondItem="51332" secondAttribute="trailing" constant="16"/>
+                            <constraint id="51374" firstItem="43828" firstAttribute="bottom" secondItem="51332" secondAttribute="bottom" constant="16"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnChangeUsername" destination="51321" id="name-outlet-51321"/>
+                    </connections>
+                    <tabBarItem key="tabBarItem" id="45498" title="Settings" image="icons8-settings-30.png"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="43832" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1314" y="1480"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Ekkl.png" width="400" height="400"/>
+        <image name="icons8-communication-30.png" width="30" height="30"/>
+        <image name="icons8-radio-station-30.png" width="30" height="30"/>
+        <image name="BubbleIncoming" width="56" height="35"/>
+        <image name="BubbleOutgoing" width="56" height="35"/>
+        <image name="Ekk.png" width="2048" height="1648"/>
+        <image name="IconEkklesia.png" width="192" height="192"/>
+        <image name="iconPause.png" width="48" height="48"/>
+        <image name="iconPlay.png" width="48" height="48"/>
+        <image name="iosBackground.png" width="640" height="1136"/>
+        <image name="icons8-communication-25.png" width="25" height="25"/>
+        <image name="icons8-radio-station-25.png" width="25" height="25"/>
+        <image name="icons8-pause-30.png" width="30" height="30"/>
+        <image name="icons8-play-30.png" width="30" height="30"/>
+        <image name="icons8-pause-button-50.png" width="50" height="50"/>
+        <image name="icons8-pause-button-filled-50.png" width="50" height="50"/>
+        <image name="icons8-play-button-circled-50.png" width="50" height="50"/>
+        <image name="icons8-play-button-circled-filled-50.png" width="50" height="50"/>
+        <image name="icons8-sent-25.png" width="25" height="25"/>
+        <image name="icons8-sent-30.png" width="30" height="30"/>
+        <image name="icons8-sent-50.png" width="50" height="50"/>
+        <image name="googleSignin.png" width="602" height="102"/>
+        <image name="icons8-settings-30.png" width="30" height="30"/>
+    </resources>
+</document>
